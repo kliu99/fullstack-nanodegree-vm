@@ -5,3 +5,6 @@ This course is a quick, fun introduction to using a relational database from you
 After taking this course, you'll be able to write code using a database as a backend to store application data reliably and safely.
 
 https://www.udacity.com/course/intro-to-relational-databases--ud197
+
+## Useful Resourses
+- Postgresql Tutorial http://www.postgresqltutorial.com

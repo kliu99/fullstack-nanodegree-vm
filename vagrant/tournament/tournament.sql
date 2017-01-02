@@ -7,3 +7,19 @@
 -- these lines here.
 
 
+CREATE TABLE players ( 
+	id SERIAL PRIMARY KEY,
+    name TEXT NOT NULL
+);
+
+CREATE TABLE matches ( 
+	host INTEGER REFERENCES players (id),
+	guest INTEGER REFERENCES players (id),
+	winner INTEGER REFERENCES players (id),
+	PRIMARY KEY (host, guest)
+);
+
+
+CREATE VIEW match_players AS SELECT host, guest FROM matches
+
+
